@@ -4,9 +4,37 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KoreaWeatherAPIService.Sample"
-        mc:Ignorable="d"
+        xmlns:vm="clr-namespace:KoreaWeatherAPIService.Sample.ViewModels"
+        mc:Ignorable="d" x:Name="root"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Window.DataContext>
+        <vm:MainViewModel/>
+    </Window.DataContext>
+    
+    <Grid Margin="0,10,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="Out Of Korea" Background="Red" Foreground="White" TextAlignment="Center" Padding="1" Visibility="{Binding ErrorVisible}"/>
+
+        <ListView Grid.Row="1" ItemsSource="{Binding Observation.Response.Body.Items.Item}" MinHeight="200" Margin="20">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding BaseDate}"/>
+                        <TextBlock Text="{Binding Category}" Margin="15,0"/>
+                        <TextBlock Text="{Binding ObsrValue}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
         
+        <StackPanel Grid.Row="2"  Orientation="Vertical">
+            <TextBox Text="{Binding Latitude}"/>
+            <TextBox Text="{Binding Longitude}"/>
+            <Button Content="Reqeust" Command="{Binding ReqeustWeatherCommand}" Padding="5"/>
+        </StackPanel>
     </Grid>
 </Window>
