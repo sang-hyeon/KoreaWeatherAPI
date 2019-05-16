@@ -5,8 +5,8 @@
 '우리 동네'를 사용하시는분께서 참고 하시기 바랍니다.
 
 ## 샘플 스크린샷
-![ex_screenshot](./SampleScreen/scr_run.png)
-![ex_screenshot](./SampleScreen/scr_fail.png)
+![ex_screenshot](./SampleScreen/scr_run.png){: width="50%" height="50%"}
+![ex_screenshot](./SampleScreen/scr_fail.png){: width="50%" height="50%"}
 
 
 ## 사용시
