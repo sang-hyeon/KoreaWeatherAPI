@@ -5,8 +5,8 @@
 '우리 동네'를 사용하시는분께서 참고 하시기 바랍니다.
 
 ## 샘플 스크린샷
-https://github.com/sang-hyeon/KoreaWeatherAPI/blob/master/SampleScreen/scr_run.png?raw=true
-https://github.com/sang-hyeon/KoreaWeatherAPI/blob/master/SampleScreen/scr_fail.png?raw=true
+![ex_screenshot](./SampleScreen/scr_run.png)
+![ex_screenshot](./SampleScreen/scr_fail.png)
 
 
 ## 사용시
