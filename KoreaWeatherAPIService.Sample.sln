@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoreaWeatherAPIService.Sample", "KoreaWeatherAPIService.Sample\KoreaWeatherAPIService.Sample.csproj", "{2731A651-952D-488F-AE37-CECEE5B7B615}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoreaWeatherAPIService.Sample", "Sample\KoreaWeatherAPIService.Sample\KoreaWeatherAPIService.Sample.csproj", "{BCA532C3-35A4-449B-BECA-5ADAA557F676}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{728019F8-F2B6-4530-8A42-4867D4105D20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoreaWeatherAPIService", "Src\KoreaWeatherAPIService\KoreaWeatherAPIService.csproj", "{0EB44091-DBEE-4B9D-9908-6754A59F054D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoreaWeatherAPIService.Tests", "Tests\KoreaWeatherAPIService.Tests\KoreaWeatherAPIService.Tests.csproj", "{5353F156-E641-4408-8B94-A4AEC4E8468F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4B357284-4867-4C73-B078-5F4BC52763A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +19,25 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2731A651-952D-488F-AE37-CECEE5B7B615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2731A651-952D-488F-AE37-CECEE5B7B615}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2731A651-952D-488F-AE37-CECEE5B7B615}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2731A651-952D-488F-AE37-CECEE5B7B615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCA532C3-35A4-449B-BECA-5ADAA557F676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCA532C3-35A4-449B-BECA-5ADAA557F676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCA532C3-35A4-449B-BECA-5ADAA557F676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCA532C3-35A4-449B-BECA-5ADAA557F676}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EB44091-DBEE-4B9D-9908-6754A59F054D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EB44091-DBEE-4B9D-9908-6754A59F054D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EB44091-DBEE-4B9D-9908-6754A59F054D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EB44091-DBEE-4B9D-9908-6754A59F054D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5353F156-E641-4408-8B94-A4AEC4E8468F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5353F156-E641-4408-8B94-A4AEC4E8468F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5353F156-E641-4408-8B94-A4AEC4E8468F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5353F156-E641-4408-8B94-A4AEC4E8468F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BCA532C3-35A4-449B-BECA-5ADAA557F676} = {728019F8-F2B6-4530-8A42-4867D4105D20}
+		{5353F156-E641-4408-8B94-A4AEC4E8468F} = {4B357284-4867-4C73-B078-5F4BC52763A8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {27C0278C-974E-4145-8F18-FF14CCD2BE96}

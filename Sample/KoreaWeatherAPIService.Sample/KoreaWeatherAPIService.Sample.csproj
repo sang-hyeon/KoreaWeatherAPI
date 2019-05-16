@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2731A651-952D-488F-AE37-CECEE5B7B615}</ProjectGuid>
+    <ProjectGuid>{BCA532C3-35A4-449B-BECA-5ADAA557F676}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>KoreaWeatherAPIService.Sample</RootNamespace>
     <AssemblyName>KoreaWeatherAPIService.Sample</AssemblyName>
