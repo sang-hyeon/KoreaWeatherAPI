@@ -5,7 +5,8 @@
 '우리 동네'를 사용하시는분께서 참고 하시기 바랍니다.
 
 ## 샘플 스크린샷
-<img src="/SampleScreen/scr_run.png" width="150" height="150">
+<img src="/SampleScreen/scr_run.png" width="150" height="170">
+<img src="/SampleScreen/scr_fail.png" width="150" height="170">
 
 
 ## 사용시
