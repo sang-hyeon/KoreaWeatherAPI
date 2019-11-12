@@ -51,6 +51,7 @@ namespace KoreaWeatherAPIService
         {
             Guard_ValidateXY(xy);
 
+            //WARNING: 이런식으로 try/catch 를 넓게 지정하는건 절대 좋은 방법이 아닙니다.
             try
             {
                 var date = DateTime.Now - TimeSpan.FromMinutes(30);
